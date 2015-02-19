@@ -231,7 +231,7 @@
      * Scroll Event
      */
 
-    $window.on('scroll.scrollDepth', throttle(function() {
+    $window.bind('scroll.scrollDepth', throttle(function() {
       /*
        * We calculate document and window height on each scroll event to
        * account for dynamic DOM changes.
@@ -249,7 +249,7 @@
 
       // If all marks already hit, unbind scroll event
       if (cache.length >= marks.length + options.elements.length) {
-        $window.off('scroll.scrollDepth');
+        $window.unbind('scroll.scrollDepth');
         return;
       }
 
