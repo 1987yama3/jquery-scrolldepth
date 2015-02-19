@@ -14,6 +14,8 @@ If you have any questions you can find me on Twitter at [@robflaherty](https://t
 
 ## Changelog
 
+0.8 (2015/02/19): jQuery1.7以下もサポート. Percentageの区切りを10%単位に変更, 一度にスクロールしたときに複数のイベントを発行せず, スクロールの最後に一番近いイベントのみを発酵するように変更.
+
 0.7 (11/26/14): Added custom callback for sending scroll events to non-GA services
 
 0.6 (7/18/14): https://github.com/robflaherty/jquery-scrolldepth/issues/36
